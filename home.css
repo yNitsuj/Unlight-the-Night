@@ -1,0 +1,65 @@
+body{
+  background-color: black;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+  .column video {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  #title{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 850px) {
+    .column {
+      flex: 45%;
+      max-width: 45%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
